@@ -22,5 +22,11 @@ int32     class  # 0 = Warrior, 1 = Lancer, 2 = Slayer, 3 = Berserker, 4 = Sorce
 */
 return true
 }
+if (job == 6){
+e.templateId = 11007
+return true
+}
+})
+}
 })
 }
