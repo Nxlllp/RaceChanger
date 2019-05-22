@@ -1,5 +1,5 @@
 # RaceChanger
-mod.game.me.class == '職業')
+mod.game.me.class == ('職業')
 #	DataCenterの職表記にする必要あり。
 	
 	ウォーリアー = warrior	ランサー = lancer	 スレイヤー = slayer	バーサーカー = berserker
