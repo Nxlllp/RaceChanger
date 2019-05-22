@@ -1,5 +1,10 @@
 # RaceChanger
-
+mod.game.me.class == '職業')
+	DataCenterの職表記にする必要あり。
+#	ウォーリアー = warrior	ランサー = lancer	 スレイヤー = slayer	バーサーカー = berserker
+	ソーサラー = sorcerer	ガンナー = engineer アーチャー = archer	プリースト = priest		エレメンタリスト = elementalist
+	ソウルリーパー = soulless ファイター = fighter	忍者 = assassin	ムーングレイバー = glaiver
+		
 
 int32     templateId  # For players the convention is 1XXYY (X = 1 + race*2 + gender, Y = 1 + class). See C_CREATE_USER
 
