@@ -1,11 +1,15 @@
-module.exports = function reee(d) {
+module.exports = function racechange(mod) {
+mod.hook('S_LOGIN', 13, (event) => {
 
-d.hook('S_LOGIN', 13, (e) => {
-        model = e.templateId;
-        job = (model - 10101) % 100;
-
-if (job == 9){
-e.templateId = 11010
+if(mod.game.me.class == 'fighter')
+	/*	mod.game.me.class == '職業')
+	DataCenterの職表記にする必要あり。
+#	ウォーリアー = warrior	ランサー = lancer	 スレイヤー = slayer	バーサーカー = berserker
+	ソーサラー = sorcerer	ガンナー = engineer アーチャー = archer	プリースト = priest		エレメンタリスト = elementalist
+	ソウルリーパー = soulless ファイター = fighter	忍者 = assassin	ムーングレイバー = glaiver
+		*/	
+{
+event.templateId = 10911
 /*
 int32     templateId  # For players the convention is 1XXYY (X = 1 + race*2 + gender, Y = 1 + class). See C_CREATE_USER
 C_CREATE_USER---
@@ -20,10 +24,6 @@ int32     class  # 0 = Warrior, 1 = Lancer, 2 = Slayer, 3 = Berserker, 4 = Sorce
 				YY = 1 + 9 = 10
 				 1 10 10
 */
-return true
-}
-if (job == 6){
-e.templateId = 11007
 return true
 }
 })
